@@ -894,6 +894,16 @@ article img {
   display: block;
   max-width: 100%;
   height: auto; }
+  article img.alignright {
+    max-width: 40%;
+    float: right;
+    margin-left: 20px;
+    margin-top: 3px; }
+  article img.alignleft {
+    max-width: 40%;
+    float: left;
+    margin-right: 20px;
+    margin-top: 3px; }
 
 article code {
   font-family: monospace;
