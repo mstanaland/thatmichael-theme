@@ -18,6 +18,11 @@ article {
 		p a {
 			@include underline($code-color, white, 1px);
 		}
+
+		ol li:before {
+			border-right: solid 1px $code-color;
+			color: $code-color;
+		}
 	}
 
 	&.category-design {
@@ -36,6 +41,11 @@ article {
 		p a {
 			@include underline($design-color, white, 1px);
 		}
+
+		ol li:before {
+			border-right: solid 1px $design-color;
+			color: $design-color;
+		}
 	}
 
 	&.category-photo {
@@ -53,6 +63,11 @@ article {
 
 		p a {
 			@include underline($snapshot-color, white, 1px);
+		}
+
+		ol li:before  {
+			border-right: solid 1px $snapshot-color;
+			color: $snapshot-color;
 		}
 	}
 }
@@ -141,7 +156,7 @@ article pre {
 	word-wrap: break-word;
 }
 
-ol {
+article ol {
 
 	li {
 		margin: baselines(1) 0;
@@ -149,7 +164,7 @@ ol {
 		padding-left: 40px;
 		position: relative;
 
-		&::before {
+		&:before {
 			content: counter(step-counter);
 			display: table-cell;
 			@include position(absolute, 0 null null 0);
@@ -159,21 +174,6 @@ ol {
 			padding-right: 10px;
 			border-right: solid 1px $gray-400;
 			color: $gray-500;
-
-			.category-code & {
-				border-right: solid 1px $code-color;
-				color: $code-color;
-			}
-
-			.category-design & {
-				border-right: solid 1px $design-color;
-				color: $design-color;
-			}
-
-			.category-photo & {
-				border-right: solid 1px $snapshot-color;
-				color: $snapshot-color;
-			}
 		}
 	}
 }
