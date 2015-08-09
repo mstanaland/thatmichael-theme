@@ -890,11 +890,39 @@ article code {
 
 article pre {
   display: block;
-  padding: 10px;
+  margin: 11.25px 0;
+  padding: 11.25px;
   background: #fafafa;
   border: solid 1px #eeeeee;
   font-family: monospace;
   font-size: 13px; }
+
+ol li {
+  margin: 22.5px 0;
+  counter-increment: step-counter;
+  padding-left: 40px;
+  position: relative; }
+  ol li::before {
+    content: counter(step-counter);
+    display: table-cell;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 500;
+    padding-right: 10px;
+    border-right: solid 1px #bdbdbd;
+    color: #9e9e9e; }
+    .category-code ol li::before {
+      border-right: solid 1px #90b44a;
+      color: #90b44a; }
+    .category-design ol li::before {
+      border-right: solid 1px #3893dc;
+      color: #3893dc; }
+    .category-snapshots ol li::before {
+      border-right: solid 1px #df554b;
+      color: #df554b; }
 
 article .wrapper {
   position: relative;
