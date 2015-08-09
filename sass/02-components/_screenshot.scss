@@ -1,0 +1,31 @@
+.screenshot-wrapper {
+	@include clearfix;
+	margin-bottom: baselines(1);
+}
+
+.screenshot {
+	width: 80%;
+	max-height: 650px;
+	margin: 0 auto;
+	border: solid 3px #e1e1e1;
+	border-top: none;
+	border-radius: 5px;
+	overflow: hidden;
+
+
+	img {
+		width: 100%;
+	}
+
+
+	&.double {
+		float: left;
+		width: 49.25%;
+		margin-right: 1.5%;
+		border-radius: 3px;
+
+		&:last-of-type {
+			margin: 0;
+		}
+	}
+}
