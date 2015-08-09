@@ -895,7 +895,12 @@ article pre {
   background: #fafafa;
   border: solid 1px #eeeeee;
   font-family: monospace;
-  font-size: 13px; }
+  font-size: 13px;
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  word-wrap: break-word; }
 
 ol li {
   margin: 22.5px 0;
