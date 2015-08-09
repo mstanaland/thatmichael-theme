@@ -1,0 +1,15 @@
+// Calculate em values
+// -------------------------
+@function em($target, $context: $base-font-size) {
+    @return ($target / $context) * 1em;
+}
+
+@function baselines($lines, $context: $base-font-size) {
+    @return ($lines * $base-line-height);
+}
+
+// Calculate column width values
+// -------------------------
+@function columns($columns) {
+    @return (($columns * $doc-column-width) + (($columns - 1) * $doc-gutter-size));
+}

@@ -1,0 +1,32 @@
+.category-links {
+	@include clearfix;
+	margin-top: 2px;
+
+	@include breakpoint-S {
+		//display: none;
+	}
+}
+
+.category-link {
+	float: left;
+	position: relative;
+	margin-right: 30px;
+	font-size: 17px;
+	line-height: 1.5;
+	
+	letter-spacing: normal;
+
+	&:not(:last-child):after {
+		content: '/';
+		@include position(absolute, 0 -18px null null);
+		color: tint($dark-brown, 70%);
+	}
+
+	a {
+		font-weight: $medium;
+	}
+
+	@include breakpoint-S {
+		font-size: 15px;
+	}
+}

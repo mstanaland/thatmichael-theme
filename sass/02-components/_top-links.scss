@@ -1,0 +1,33 @@
+.top-links {
+	@include clearfix;
+	position: relative;
+	margin-bottom: baselines(1);
+
+	@include breakpoint-S {
+		display: none;
+	}
+}
+
+.top-link {
+	float: right;
+
+	a {
+		margin-left: 40px;
+		display: block;
+		padding: 5px 0;
+		font-size: 11px;
+		font-weight: $medium;
+		line-height: 1;
+		letter-spacing: 0.75px;
+		text-transform: uppercase;
+	}
+}
+
+.top-link--search {
+	z-index: 100;
+	a {
+		@include size(18px 18px);
+		@include text-replace;
+		background: url('../images/icon-search-black.svg') no-repeat 50% 50%;
+	}
+}

@@ -1,0 +1,53 @@
+.pagination {
+	margin-top: baselines(1);
+}
+
+ul.page-numbers {
+	display: inline-block;
+
+	margin: 0;
+	@include clearfix;
+
+	li {
+		display: block;
+		float: left;
+		margin: 0 4px 4px 0;
+		text-align: center;
+	}
+}
+
+
+.page-numbers a,
+.page-numbers span {
+	display: table-cell;
+	@include size(26px 26px);
+	text-align: center;
+	font-size: 12px;
+	line-height: 1;
+	text-decoration: none;
+	font-weight: $medium;
+	vertical-align: middle;
+	color: $purple;
+}
+
+.page-numbers a span { padding: 0 }
+
+.page-numbers a:hover,
+.page-numbers.current,
+.page-numbers.current:hover {
+	text-decoration: none;
+}
+
+.page-numbers.current {
+	//border-radius: 50%;
+	border: 1px solid $gray-400;
+	//background: $purple;
+	//color: white;
+}
+
+.page-numbers.next,
+.page-numbers.previous {
+	font-size: 16px;
+}
+
+.page-numbers:hover { text-decoration: none }

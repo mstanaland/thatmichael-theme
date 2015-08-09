@@ -1,0 +1,24 @@
+.container {
+	@include clearfix;
+	width: 100%;
+	padding: 0 $gutter-width;
+	margin: 0 auto;
+	min-width: $live-area-M;
+
+	@include breakpoint-XL {
+		width: $live-area-XL;
+	}
+
+	@include breakpoint-L {
+		width: $live-area-L;
+	}
+
+	@include breakpoint-M {
+		width: $live-area-M;
+	}
+
+	@include breakpoint-S {
+		min-width: 0;
+	}
+
+}

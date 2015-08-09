@@ -1,0 +1,97 @@
+
+$black: #333;
+$white: #fff;
+$default-mac-select-color: #b3d5ff;
+$newsprint: #f3f1ee;
+$dark-brown: #5e4739;
+$berry: #ec5a62;
+$light-blue: #b4e7f8;
+
+$green: #90b44a;
+$purple: #9f5fab;
+$blue: desaturate(#2196F3, 20%);
+$red: desaturate(#F44336, 20%);
+$orange: desaturate(#FFB300, 10%);
+
+$lime-50:  #F9FBE7;
+$lime-100: #F0F4C3;
+$lime-200: #E6EE9C;
+$lime-300: #DCE775;
+$lime-400: #D4E157;
+$lime-500: #CDDC39;
+$lime-600: #C0CA33;
+$lime-700: #AFB42B;
+$lime-800: #9E9D24;
+$lime-900: #827717;
+
+
+$cyan-50: #E0F7FA;
+$cyan-100: #B2EBF2;
+$cyan-200: #80DEEA;
+$cyan-300: #4DD0E1;
+$cyan-400: #26C6DA;
+$cyan-500: #00BCD4;
+$cyan-600: #00ACC1;
+$cyan-700: #0097A7;
+$cyan-800: #00838F;
+$cyan-900: #006064;
+
+// actually light blue
+$cyan-50: #E1F5FE;
+$cyan-100: #B3E5FC;
+$cyan-200: #81D4FA;
+$cyan-300: #4FC3F7;
+$cyan-400: #29B6F6;
+$cyan-500: #03A9F4;
+$cyan-600: #039BE5;
+$cyan-700: #0288D1;
+$cyan-800: #0277BD;
+$cyan-900: #01579B;
+
+
+// Beiges
+$beige: #b1a89c;
+$beige-100: lighten($beige, 32%);
+$beige-200: lighten($beige, 24%);
+$beige-300: lighten($beige, 16%);
+$beige-400: lighten($beige, 8%);
+$beige-500: $beige;
+$beige-600: darken($beige, 8%);
+$beige-700: darken($beige, 16%);
+$beige-800: darken($beige, 24%);
+$beige-900: darken($beige, 32%);
+// Grays
+$gray: #9e9e9e;
+$gray-50: #fafafa;
+$gray-100: #f5f5f5;
+$gray-150: #f2f2f2;
+$gray-200: #eeeeee;
+$gray-250: #e7e7e7;
+$gray-300: #e0e0e0;
+$gray-350: #cfcfcf;
+$gray-400: #bdbdbd;
+$gray-500: #9e9e9e;
+$gray-600: #757575;
+$gray-700: #616161;
+$gray-800: #424242;
+$gray-900: #212121;
+
+
+$gold: #ffde3f;
+//$gold: saturate(tint(#ffdb4c, 15%), 50%);
+
+//$blue: #007AFF;
+
+$color-link: $blue;
+
+$color-primary: tint($dark-brown, 30%);
+$color-screen: $newsprint;
+
+$accent-color: $lime-400;
+$accent-color-text: $lime-600;
+
+$home-color: $purple;
+$code-color: $green;
+$design-color: $blue;
+$snapshot-color: $red;
+$about-color: $orange;

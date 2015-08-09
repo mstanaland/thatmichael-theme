@@ -1,0 +1,156 @@
+article {
+	padding: baselines(1) 0 baselines(3) 0; 
+	border-bottom: solid 1px $gray-700;
+
+	&.category-code {
+		h3 a:hover {
+			@include underline($code-color, white, 1px, 100%);
+		}
+
+		h4 a {
+			color: $code-color;
+
+			&:hover {
+				@include underline($code-color, white, 1px, 100%);
+			}
+		}
+
+		p a {
+			@include underline($code-color, white, 1px);
+		}
+	}
+
+	&.category-design {
+		h3 a:hover {
+			@include underline($design-color, white, 1px, 100%);
+		}
+
+		h4 a {
+			color: $design-color;
+
+			&:hover {
+				@include underline($design-color, white, 1px, 100%);
+			}
+		}
+
+		p a {
+			@include underline($design-color, white, 1px);
+		}
+	}
+
+	&.category-snapshots {
+		h3 a:hover {
+			@include underline($snapshot-color, white, 1px, 100%);
+		}
+
+		h4 a {
+			color: $snapshot-color;
+
+			&:hover {
+				@include underline($snapshot-color, white, 1px, 100%);
+			}
+		}
+
+		p a {
+			@include underline($snapshot-color, white, 1px);
+		}
+	}
+}
+
+article h3 {
+	-webkit-font-smoothing: antialiased;
+	font-weight: $bold;
+	line-height: $base-line-height * 1.5;
+	font-size: 24px;
+	letter-spacing: -0.25px;
+	margin-bottom: 6px;
+
+	a {
+		&:hover {
+			@include underline($home-color, white, 1px, 100%);
+		}
+	}
+
+	@include breakpoint-S {
+		font-size: 21px;
+		line-height: 1.2;
+		margin-bottom: 4px;
+	}
+}
+
+article h4 {
+	font-size: 11px;
+	color: $gray-500;
+	margin-bottom: baselines(1);
+	text-transform: uppercase;
+	font-weight: $regular;
+	letter-spacing: 0.75px;
+
+	a {
+		padding: 2px 0;
+		color: $home-color;
+		font-weight: $medium;
+		
+
+		&:hover {
+			@include underline($home-color, white, 1px, 100%);
+		}
+	}
+
+	span {
+		display: inline-block;
+		margin: 0 0.4em;
+	}
+}
+
+article p {
+	margin: baselines(1) 0;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+	a {
+		//display: inline-block;
+		//@include underline(tint($black, 70%));
+		@include underline($home-color, white, 1px);
+		padding: 2px 0;
+	}
+}
+
+article img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+article code {
+	font-family: monospace;
+	font-size: 13px;
+}
+article pre {
+	display: block;
+	padding: 10px;
+	background: $gray-50;
+	border: solid 1px $gray-200;
+	font-family: monospace;
+	font-size: 13px;
+}
+
+article .wrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+
+	iframe, 
+	object,
+	embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}

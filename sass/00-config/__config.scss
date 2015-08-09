@@ -1,0 +1,42 @@
+@import "bourbon/bourbon";
+@import "colors";
+@import "fonts";
+@import "utilities";
+@import "mixins";
+@import "helpers";
+
+
+// Default typograhy settings
+$base-font-size     : 15px;
+$base-line-height   : $base-font-size * 1.5;
+$sans-serif         : 'Graphik Web', $helvetica;
+$serif              : 'Lyon Text Web', serif;
+$regular            : 400;
+$medium             : 500;
+$bold               : 700;
+$text-color         : $black;
+$select-color       : $default-mac-select-color;
+
+
+// Outside margin, columns and gutters
+$col-count          : 12;
+$gutter-width       : 30px;
+
+
+// Column widths
+$col-width-XL       : 63px;
+$col-width-L        : 53px;
+$col-width-M        : 42px;
+
+
+// Live areas. Actual content is 2*gutter more narrow
+$live-area-XL       : 990px;
+$live-area-L        : 882px;
+$live-area-M        : 735px;
+
+
+// Responsive breakpoints
+$breakpoint-XL      : $live-area-XL + 50px;
+$breakpoint-L       : $live-area-L + 40px;
+$breakpoint-M       : $live-area-M + 40px;
+$breakpoint-S       : 520px;

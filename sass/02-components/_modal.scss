@@ -1,0 +1,5 @@
+.modal-overlay{
+	@include position(fixed, 0 0 0 0);
+	z-index: 10;
+	background: rgba(white, 0.75);
+}

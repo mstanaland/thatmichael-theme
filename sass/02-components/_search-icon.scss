@@ -1,0 +1,81 @@
+$search-toggle-size: 16px;
+$search-toggle-padding: 10px;
+$search-toggle-color: $black;
+$search-toggle-color-open: $purple;
+
+.search-toggle {
+	display: block;
+	position: relative;
+	width: $search-toggle-size + ($search-toggle-padding * 2);
+	height: $search-toggle-size + ($search-toggle-padding * 2);
+	float: right;
+	margin: 2px 8px 0 0;
+	//background: url('../images/icon-search-black.svg') no-repeat 50% 50%;
+	//background-size: 16px 16px;
+	position: relative;
+	z-index: 10;
+
+	@include breakpoint-S {
+		display: none;
+	}
+}
+
+
+.search-toggle span {
+	display: block;
+	position: absolute;
+	left: $search-toggle-padding;
+	top: $search-toggle-padding;
+	@include transition(all .25s ease-in-out);
+	@include transform-origin(50% 50%);
+
+	&:nth-child(1) {
+		border: solid 2px $search-toggle-color;
+		width: $search-toggle-size * 0.75;
+		height: $search-toggle-size * 0.75;
+		border-radius: 50%;
+	}
+
+	&:nth-child(2),
+	&:nth-child(3) {
+		height: 2px;
+		width: $search-toggle-size * 0.5;
+		background: $search-toggle-color;
+		@include transform(translateX($search-toggle-size * 0.53125) translateY($search-toggle-size * 0.75) rotate(45deg));
+	}
+
+	&:nth-child(3) {
+		visibility: hidden;
+	}
+}
+
+.is-menu-open .search-toggle {
+	position: relative;
+	// &:before {
+	// 	content: 'ESC to close';
+	// 	width: 120px;
+	// 	padding-right: $search-toggle-size * 3;
+	// 	@include position(absolute, 8px 0 null null);
+	// 	text-align: right;
+	// 	font-size: 11px;
+	// 	color: $gray-400;
+	// }
+
+	span:nth-child(1) {
+		@include transform(scale(0.1));
+		opacity: 0;
+	}
+
+	span:nth-child(2) {
+		width: $search-toggle-size * 1.5;
+		@include transform(translateX(-4px) translateY(7px) rotate(-45deg));
+		background: $search-toggle-color-open;
+	}
+
+	span:nth-child(3) {
+		visibility: visible;
+		width: $search-toggle-size * 1.5;
+		@include transform(translateX(-4px) translateY(7px) rotate(45deg));
+		background: $search-toggle-color-open;
+	}
+}

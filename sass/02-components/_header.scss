@@ -1,0 +1,56 @@
+header.page-header {
+	@extend .container;
+
+	@include breakpoint-S {
+		padding: 20px 0 0 0;
+	}
+
+
+	.header-inner {
+		
+		padding: baselines(2) 0 baselines(4) 0;
+
+		@include breakpoint-S {
+			padding: 0 0 baselines(2) 0;
+			border-bottom: solid 1px $gray-500;
+
+			.is-menu-open & {
+				display: none;
+			}
+		}
+	}
+	
+
+	h1 {
+		font-size: 42px;
+		letter-spacing: -1.25px;
+		line-height: $base-line-height * 2;
+		font-weight: $bold;
+
+		@include breakpoint-S {
+			font-size: 32px;
+			letter-spacing: -0.5px;
+			text-align: center;
+		}
+	}
+
+	h2 {
+		display: none;
+		font-size: 12px;
+		letter-spacing: 2px;
+		font-weight: $medium;
+		text-align: center;
+		color: $gray-500;
+		text-transform: uppercase;
+
+		span {
+			color: $gray-300;
+			display: inline-block;
+			margin: 0 5px;
+		}
+
+		@include breakpoint-S {
+			display: block;
+		}
+	}
+}

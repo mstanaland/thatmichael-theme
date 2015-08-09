@@ -1,0 +1,9 @@
+.site-main {
+	@extend .container;
+
+	.is-menu-open & {
+		@include breakpoint-S {
+			display: none;
+		}
+	}
+}

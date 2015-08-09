@@ -1,0 +1,16 @@
+/*
+Theme Name: That Michael
+Author: Michael Stanaland
+Author URI: http://thatmichael.com/
+Description: My very own special theme for my design and photo portfolio.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: white, black, light, one-column, flexible-width, responsive-layout
+
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+@import "00-config/__config.scss";
+@import "01-base/__base.scss";
+@import "02-components/__components.scss";

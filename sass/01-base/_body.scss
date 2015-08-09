@@ -1,0 +1,23 @@
+body {
+  @include font-sans--normal;
+  background-color: $white;
+  color: $black;
+  font-size: $base-font-size;
+  line-height: $base-line-height; 
+  letter-spacing: normal;
+
+  &::selection {
+    background: $select-color;
+  }
+
+  @include breakpoint-S {
+  	overflow-X: hidden;
+  }
+
+  &.is-menu-open {
+    @include breakpoint-S {
+      //overflow: hidden;
+    }
+    
+  }
+}

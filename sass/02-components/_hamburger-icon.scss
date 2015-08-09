@@ -1,0 +1,63 @@
+$hamburger-width: 20px;
+$hamburger-height: 14px;
+$hamburger-padding: 6px;
+
+.mobile-menu-toggle {
+  display: none;
+  width: $hamburger-width + ($hamburger-padding * 2);
+  height: $hamburger-height + ($hamburger-padding * 2);
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 100;
+
+  @include breakpoint-S {
+    display: block;
+  }
+
+}
+
+.mobile-menu-toggle span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: $hamburger-width;
+  background: $black;
+  opacity: 1;
+  left: $hamburger-padding;
+  top: $hamburger-padding;
+  @include transform(rotate(0deg));
+  @include transition(transform .25s ease-in-out, opacity .25s ease-in-out);
+  @include transform-origin(50% 50%);
+}
+
+
+
+
+.mobile-menu-toggle span:nth-child(1) {
+  @include transform(translateY(0) rotate(0deg));
+}
+
+.mobile-menu-toggle span:nth-child(2),.mobile-menu-toggle span:nth-child(3) {
+  @include transform(translateY($hamburger-height / 2 - 1px) rotate(0deg));
+}
+
+.mobile-menu-toggle span:nth-child(4) {
+  @include transform(translateY($hamburger-height - 2px) rotate(0deg));
+}
+
+.is-menu-open .mobile-menu-toggle span:nth-child(1),
+.is-menu-open .mobile-menu-toggle span:nth-child(4) {
+  opacity: 0;
+  @include transform(translateY($hamburger-height / 2 - 1px) rotate(0deg));
+}
+
+.is-menu-open .mobile-menu-toggle span:nth-child(2) {
+  @include transform(translateY($hamburger-height / 2 - 2px) rotate(45deg));
+}
+
+.is-menu-open .mobile-menu-toggle span:nth-child(3) {
+  @include transform(translateY($hamburger-height / 2 - 2px) rotate(-45deg));
+}
