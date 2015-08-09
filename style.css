@@ -788,34 +788,34 @@ article {
     text-shadow: 2px 0 0 white, -2px 0 0 white; }
     article.category-design p a::selection {
       text-shadow: 2px 0 0 #b3d5ff, -2px 0 0 #b3d5ff; }
-  article.category-snapshots h3 a:hover {
+  article.category-photo h3 a:hover {
     background-image: -webkit-linear-gradient( top , #df554b 50%, #df554b 100%);
     background-image: linear-gradient(to bottom, #df554b 50%, #df554b 100%);
     background-size: 1px 1px;
     background-repeat: repeat-x;
     background-position: 0 100%;
     text-shadow: 2px 0 0 white, -2px 0 0 white; }
-    article.category-snapshots h3 a:hover::selection {
+    article.category-photo h3 a:hover::selection {
       text-shadow: 2px 0 0 #b3d5ff, -2px 0 0 #b3d5ff; }
-  article.category-snapshots h4 a {
+  article.category-photo h4 a {
     color: #df554b; }
-    article.category-snapshots h4 a:hover {
+    article.category-photo h4 a:hover {
       background-image: -webkit-linear-gradient( top , #df554b 50%, #df554b 100%);
       background-image: linear-gradient(to bottom, #df554b 50%, #df554b 100%);
       background-size: 1px 1px;
       background-repeat: repeat-x;
       background-position: 0 100%;
       text-shadow: 2px 0 0 white, -2px 0 0 white; }
-      article.category-snapshots h4 a:hover::selection {
+      article.category-photo h4 a:hover::selection {
         text-shadow: 2px 0 0 #b3d5ff, -2px 0 0 #b3d5ff; }
-  article.category-snapshots p a {
+  article.category-photo p a {
     background-image: -webkit-linear-gradient( top , #df554b 50%, #df554b 100%);
     background-image: linear-gradient(to bottom, #df554b 50%, #df554b 100%);
     background-size: 1px 1px;
     background-repeat: repeat-x;
     background-position: 0 98%;
     text-shadow: 2px 0 0 white, -2px 0 0 white; }
-    article.category-snapshots p a::selection {
+    article.category-photo p a::selection {
       text-shadow: 2px 0 0 #b3d5ff, -2px 0 0 #b3d5ff; }
 
 article h3 {
@@ -925,7 +925,7 @@ ol li {
     .category-design ol li::before {
       border-right: solid 1px #3893dc;
       color: #3893dc; }
-    .category-snapshots ol li::before {
+    .category-photo ol li::before {
       border-right: solid 1px #df554b;
       color: #df554b; }
 

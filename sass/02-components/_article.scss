@@ -38,7 +38,7 @@ article {
 		}
 	}
 
-	&.category-snapshots {
+	&.category-photo {
 		h3 a:hover {
 			@include underline($snapshot-color, white, 1px, 100%);
 		}
@@ -170,7 +170,7 @@ ol {
 				color: $design-color;
 			}
 
-			.category-snapshots & {
+			.category-photo & {
 				border-right: solid 1px $snapshot-color;
 				color: $snapshot-color;
 			}
