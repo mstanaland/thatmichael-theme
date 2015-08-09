@@ -728,7 +728,7 @@ nav {
       font-size: 15px; } }
 
 article {
-  padding: 22.5px 0 67.5px 0;
+  padding: 22.5px 0 45px 0;
   border-bottom: solid 1px #616161; }
   article.category-code h3 a:hover {
     background-image: -webkit-linear-gradient( top , #90b44a 50%, #90b44a 100%);
@@ -875,8 +875,10 @@ article h4 {
 
 article p {
   margin: 22.5px 0; }
-  article p:last-of-type {
-    margin-bottom: 0; }
+  article p + ul {
+    margin-top: -11.25px; }
+  article p + ol {
+    margin-top: -11.25px; }
   article p a {
     background-image: -webkit-linear-gradient( top , #9f5fab 50%, #9f5fab 100%);
     background-image: linear-gradient(to bottom, #9f5fab 50%, #9f5fab 100%);
@@ -911,23 +913,31 @@ article pre {
   /* Mozilla, since 1999 */
   word-wrap: break-word; }
 
-article ol li {
-  margin: 22.5px 0;
-  counter-increment: step-counter;
-  padding-left: 40px;
-  position: relative; }
-  article ol li:before {
-    content: counter(step-counter);
-    display: table-cell;
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    vertical-align: middle;
-    font-weight: 500;
-    padding-right: 10px;
-    border-right: solid 1px #bdbdbd;
-    color: #9e9e9e; }
+article ol {
+  margin: 22.5px 0; }
+  article ol li {
+    margin: 11.25px 0;
+    counter-increment: step-counter;
+    padding-left: 40px;
+    position: relative; }
+    article ol li:before {
+      content: counter(step-counter);
+      display: table-cell;
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      vertical-align: middle;
+      font-weight: 500;
+      padding-right: 10px;
+      border-right: solid 1px #bdbdbd;
+      color: #9e9e9e; }
+
+article ul {
+  margin: 22.5px 0; }
+  article ul li {
+    list-style: disc outside;
+    margin: 11.25px 0 11.25px 20px; }
 
 article .wrapper {
   position: relative;

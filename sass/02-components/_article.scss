@@ -1,5 +1,5 @@
 article {
-	padding: baselines(1) 0 baselines(3) 0; 
+	padding: baselines(1) 0 baselines(2) 0; 
 	border-bottom: solid 1px $gray-700;
 
 	&.category-code {
@@ -121,8 +121,12 @@ article h4 {
 article p {
 	margin: baselines(1) 0;
 
-	&:last-of-type {
-		margin-bottom: 0;
+	& + ul {
+		margin-top: -(baselines(0.5));
+	}
+
+	& + ol {
+		margin-top: -(baselines(0.5));
 	}
 
 	a {
@@ -157,9 +161,10 @@ article pre {
 }
 
 article ol {
+	margin: baselines(1) 0;
 
 	li {
-		margin: baselines(1) 0;
+		margin: baselines(0.5) 0;
 		counter-increment: step-counter;
 		padding-left: 40px;
 		position: relative;
@@ -175,6 +180,15 @@ article ol {
 			border-right: solid 1px $gray-400;
 			color: $gray-500;
 		}
+	}
+}
+
+article ul {	
+	margin: baselines(1) 0;
+
+	li {
+		list-style: disc outside;
+		margin: baselines(0.5) 0 baselines(0.5) 20px;
 	}
 }
 
