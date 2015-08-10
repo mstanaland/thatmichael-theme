@@ -2,7 +2,9 @@ nav {
 	position: relative;
 	height: 42px;
 	margin-bottom: baselines(1);
-	background: $gray-100;
+	background: #f2f2f2;
+	//border: solid 1px white;
+	//box-shadow: 0 2px 2px rgba($gray-800, 0.3);
 	@include transition(all 300ms);
 
 	.is-menu-open & {
@@ -19,6 +21,7 @@ nav {
 		background: none;
 		background: white;
 		height: auto;
+		box-shadow: none;
 
 		.is-menu-open & {
 			display: block;

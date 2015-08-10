@@ -70,9 +70,7 @@ if ( !function_exists( 'tm_pagination' ) ) {
 }
 
 
-
-
-
+// Get parent category ... used to add class to articles for correct coloring
 function get_first_category_ID() {
 	$category = get_the_category(); 
 	$category_parent_id = $category[0]->category_parent;
@@ -85,6 +83,31 @@ function get_first_category_ID() {
 	}
 
 	return $css_slug;
+}
+
+
+
+//Get recent headlines
+function tm_get_recents($catID) {
+	$args = array(
+		'post_type' => 'post',
+		'cat' => $catID,
+		'posts_per_page' => '5'
+	);
+	$the_query = new WP_Query( $args );
+
+	if ( $the_query->have_posts() ) {
+		echo '<div class="recents-column">';
+		echo '<h4>Recent in ' . get_cat_name($catID) . '</h4>';
+		echo '<ul>';
+		while ( $the_query->have_posts() ) {
+			$the_query->the_post();
+			echo '<li><a href="' . esc_url( get_permalink() ) . '">' . get_the_title() . '</a></li>';
+		}
+		echo '</ul>';
+		echo '</div>';
+	} 
+	wp_reset_postdata();
 }
 
 ?>

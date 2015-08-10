@@ -65,27 +65,9 @@
 					<div class="recents-wrapper">
 
 						<?php
-							for( $i = 2; $i < 5; $i++) {
-								$args = array(
-									'post_type' => 'post',
-									'cat' => $i,
-									'posts_per_page' => '5'
-								);
-								$the_query = new WP_Query( $args );
-
-								if ( $the_query->have_posts() ) {
-									echo '<div class="recents-column">';
-									echo '<h4>Recent in ' . get_cat_name($i) . '</h4>';
-									echo '<ul>';
-									while ( $the_query->have_posts() ) {
-										$the_query->the_post();
-										echo '<li><a href="' . esc_url( get_permalink() ) . '">' . get_the_title() . '</a></li>';
-									}
-									echo '</ul>';
-									echo '</div>';
-								} 
-								wp_reset_postdata();
-							}
+							tm_get_recents(2);
+							tm_get_recents(3);
+							tm_get_recents(4);
 						?>
 
 					</div>
