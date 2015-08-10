@@ -65,9 +65,9 @@
 					<div class="recents-wrapper">
 
 						<?php
-							tm_get_recents(2);
-							tm_get_recents(3);
 							tm_get_recents(4);
+							tm_get_recents(3);
+							tm_get_recents(5);
 						?>
 
 					</div>
