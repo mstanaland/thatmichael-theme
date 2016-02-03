@@ -3,7 +3,6 @@
 install in `wp-content/themes/thatmichael`
 
 
-----------------
 
 ### Formatting for screenshots
 
@@ -15,7 +14,7 @@ install in `wp-content/themes/thatmichael`
 </div>
 ```
 
-----------------
+
 
 ### Formatting for video
 If video is in an iframe no additional formatting is required. Example:
