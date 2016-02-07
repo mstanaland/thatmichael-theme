@@ -5,15 +5,26 @@ install in `wp-content/themes/thatmichael`
 
 
 ### Formatting for screenshots
-
+Single:
 ```
 <div class="screenshot-wrapper">
   <div class="screenshot">
-    <img src="XXXX" class="alignnone size-full wp-image-700" />
+    <img src="XXXX" class="alignnone size-full" />
   </div>
 </div>
 ```
 
+Double:
+```
+<div class="screenshot-wrapper">
+  <div class="screenshot double">
+    <img src="XXXX" class="alignnone size-full" />
+  </div>
+  <div class="screenshot double">
+    <img src="XXXX" class="alignnone size-full" />
+  </div>
+</div>
+```
 
 
 ### Formatting for video
